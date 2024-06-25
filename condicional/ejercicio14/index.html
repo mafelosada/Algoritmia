@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo persona</title>
+</head>
+<body>
+    <script>
+         let diasTrabajados= 35;
+        let valorDia= 80000;
+        let salud;
+        let pension;
+        let arl;
+        let sueldo;
+        let deducibles;
+        let subsidioTransporte=102854;
+        let pagoTotal;
+        let salarioMinimo=1300000;
+        let salarioMinimo2;
+        let salarioMinimo4;
+        let retencion=0.04;
+
+        sueldo= diasTrabajados*valorDia;
+
+        salud= sueldo*0.12;
+        pension= sueldo*0.16;
+        arl= sueldo*0.052;
+
+        deducibles= salud+pension+arl;
+        salarioMinimo2=salarioMinimo*2;
+        salarioMinimo4=salarioMinimo*4;
+
+        if (sueldo>salarioMinimo2) {
+            sueldo=sueldo+subsidioTransporte;
+        }
+        else{
+            sueldo=sueldo+0;
+        }
+        if (sueldo>salarioMinimo4) {
+            sueldo=sueldo-retencion;
+        }
+        else{
+            sueldo=sueldo;
+        }
+
+        pagoTotal=sueldo-deducibles;
+
+        console.log("Deducibles= "+deducibles);
+        console.log("PAGO TOTAL= "+ pagoTotal);
+
+    </script>
+    
+</body>
+</html>

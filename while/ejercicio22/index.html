@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla del 9</title>
+</head>
+<body>
+    <script>
+        let numero=5;
+        let contar=0;
+        let multiplicacion;
+        let rango=9;
+
+        while (contar<numero) {
+            contar=contar+1;
+            multiplicacion=contar*rango;
+
+            console.log(rango+" * "+ contar+" = "+ multiplicacion);
+            if (multiplicacion%2==0) {
+                console.log("es par")
+            }
+            else{
+                console.log("es impar")
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <script>
+        let numeroPar=0;
+        let numeroImpar=0;
+        let rango=5;
+        let multiplicacion;
+        let contar1;
+        let contar2;
+
+
+        for (let contar1 = 1; contar1 <= rango; contar1++) {
+            for (let contar2 = 1; contar2 <= rango; contar2++) {
+                multiplicacion = contar1*contar2;
+
+                console.log(contar1+" * "+ contar2+" = "+ multiplicacion);
+
+            if (multiplicacion%2==0) {
+                console.log("buzz")
+                numeroPar++;
+        
+            }
+            else{
+                console.log("bass")
+                numeroImpar++;
+            }
+
+            }
+
+
+        }
+
+        console.log("PARES: " + numeroPar);
+console.log("IMPARES: " + numeroImpar);
+    </script>
+    
+</body>
+</html>

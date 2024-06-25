@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas y porcentajes </title>
+</head>
+<body>
+    <script>
+        let nota1=4.5;
+        let nota2= 3.8;
+        let nota3=2.2;
+        let porcentajeNota1;
+        let porcentajeNota2;
+        let porcentajeNota3;
+        let sumaPorcentajes;
+
+        porcentajeNota1=(nota1*20)/100;
+        porcentajeNota2=(nota2*35)/100;
+        porcentajeNota3=(nota3*45)/100;
+
+        sumaPorcentajes=porcentajeNota1+porcentajeNota2+porcentajeNota3;
+
+        console.log("Porcentaje nota 1 = "+porcentajeNota1);
+        console.log("Porcentaje nota 2 = "+porcentajeNota2);
+        console.log("Porcentaje nota 3 = "+porcentajeNota3);
+        console.log("Suma de porcentajes = "+sumaPorcentajes);
+
+        if (sumaPorcentajes>4.5) {
+            console.log("Nota Superior");
+        }
+        else{
+            if (sumaPorcentajes<=4.5 && sumaPorcentajes>3.5) {
+                console.log("Nota Buena");
+            }
+            else{
+            if (sumaPorcentajes<=3.5 && sumaPorcentajes>=3.0) {
+                console.log("Nota Media");
+            }
+            else{
+                console.log("Nota Mala");
+            }
+        }
+        }
+
+    </script>
+    
+</body>
+</html>

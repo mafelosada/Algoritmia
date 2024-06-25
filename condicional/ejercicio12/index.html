@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrados</title>
+</head>
+<body>
+    <script>
+        let lado1= 4;
+        let lado2= 12;
+        let lado3= 9;
+        let cuadro1;
+        let cuadro2;
+        let cuadro3;
+
+        cuadro1=lado1*lado1;
+        cuadro2=lado2*lado2;
+        cuadro3=lado3*lado3;
+
+        console.log("Cuadrado uno= "+ cuadro1);
+        console.log("Cuadrado dos= "+ cuadro2);
+        console.log("Cuadrado tres= "+ cuadro3);
+
+        if (cuadro1==cuadro2 && cuadro2==cuadro3 && cuadro3==cuadro1){
+            console.log("Todos los cuadrados son iguales");
+        }
+        else{
+            if (cuadro1>cuadro2 && cuadro1>cuadro3){
+                console.log("El area del cuadrado uno es mayor");
+            }
+            else{
+                if (cuadro2>cuadro1 && cuadro2>cuadro3){
+                    console.log("El area del cuadrado dos es mayor");
+                }
+                else{
+                    console.log("El area del cuadrado tres es mayor");
+                }
+            }
+        }
+    
+
+    </script>
+    
+</body>
+</html>

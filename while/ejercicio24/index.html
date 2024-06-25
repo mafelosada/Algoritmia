@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <script>
+        let contar1 = 1;
+let rango1 = 5;
+let contar2 = 1;
+let rango2 = 5;
+let numeroPar = 0;
+let numeroImpar = 0;
+let resultado;
+
+while (contar1 <= rango1){
+    while (contar2 <= rango1) {
+         resultado = contar1 * contar2;
+        console.log(contar1 + " * " + contar2 + " = " + resultado);
+
+        if (resultado % 2 === 0) {
+            console.log("buzz");
+            numeroPar++;
+        } else {
+            console.log("bass");
+            numeroImpar++;
+        }
+        contar2++;
+    }
+    contar2 = 1;
+    contar1++;
+}
+
+console.log("PARES: " + numeroPar);
+console.log("IMPARES: " + numeroImpar);
+               
+    </script>
+    
+</body>
+</html>

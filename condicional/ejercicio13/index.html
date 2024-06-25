@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de edad</title>
+</head>
+<body>
+    <script>
+        let anioActual=2024;
+        let fechaNacimiento1= 2014;
+        let fechaNacimiento2= 1983;
+        let fechaNacimiento3= 2020;
+        let edadPersona1;
+        let edadPersona2;
+        let edadPersona3;
+        let promEdad;
+        
+
+        edadPersona1=anioActual-fechaNacimiento1;
+        edadPersona2=anioActual-fechaNacimiento2;
+        edadPersona3=anioActual-fechaNacimiento3;
+
+        promEdad=(edadPersona1+edadPersona2+edadPersona3)/3;
+
+        console.log("Persona uno= "+ edadPersona1);
+        console.log("Persona dos= "+ edadPersona2);
+        console.log("Persona tres= "+ edadPersona3);
+
+        console.log("Promedio de edades= "+ promEdad);
+
+        if (edadPersona1 > 17) {
+            console.log("Persona uno mayor de edad")
+        }
+        else{
+            if (edadPersona2 > 17) {
+            console.log("Persona dos mayor de edad")
+            }
+            else{
+            if (edadPersona3 > 17) {
+            console.log("Persona tres mayor de edad")
+            }
+            }
+            
+        }
+        if (promEdad>17) {
+            console.log("Promedio mayor de edad")
+        }  
+        else{
+            console.log("Promedio menor de edad")
+        }     
+
+    </script>
+</body>
+</html>
